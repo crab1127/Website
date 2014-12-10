@@ -9,11 +9,28 @@
   <script>
     $(document).ready(function() {
       $('#fullpage').fullpage({
-        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke'],
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage'],
         menu: '#menu',
-        css3: true
+        css3: true,
+        afterLoad: function (anchorLink, index) {
+          console.log(anchorLink)
+          if ('4thpage' === anchorLink) {
+
+            $('.main-con').slideDown();
+          }
+          if ('3rdPage' === anchorLink) {
+            $('.main-con').slideUp();
+          }
+        }
       });
+      $('.main h2').click(function(){
+        if($('.main-con').is(':hidden')){
+          $('.main-con').slideDown();
+        } else {
+          $('.main-con').slideUp();
+        }
+      })
     });
   </script>
 </head>
@@ -21,10 +38,13 @@
   <div class="header">
     <div class="logo">美亚友好协会</div>
     <ul class="nav">
-      <li><a href="">首页</a></li>
-      <li><a href="">新闻</a></li>
-      <li><a href="">图片</a></li>
-      <li><a href="">联系方式</a></li>
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="">公司簡介</a></li>
+      <li><a href="">新聞動態</a></li>
+      <li><a href="">活動照片</a></li>
+      <li><a href="">發展項目</a></li>
+      <li><a href="">招賢納士</a></li>
+      <li><a href="">聯繫我們</a></li>
     </ul>
   </div>
   <ul id="menu" class="fullPage-menu">
@@ -35,40 +55,34 @@
   </ul>
   <div id="fullpage">
     <div class="section active" id="section0">
-      <h1>fullPage.js</h1>
-      <h2>Create Beautiful Fullscreen Scrolling Websites</h2>
-      <div id="download"><a href="https://github.com/alvarotrigo/fullpage.js/archive/master.zip">Download</a></div><br />
-      <img src="imgs/fullPage.png" alt="fullPage" height="243" width="282" />
-      <p id="donations">
-          <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=BEK5JQCQMED4J&lc=GB&item_name=fullPage%2ejs&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted">Donations will be appreciated!</a>
-      </p>
-
-      <img src="imgs/used-by-fullpage.png" alt="Used By" id="usedBy" height="73" width="402" />
-
+      <div class="bg"><img src="../image/section1.jpg" alt=""></div>
     </div>
     <div class="section" id="section1">
-       <div class="intro">
-        <h1>Easy to use plugin</h1>
-        <p>HTML markup example to define 4 sections.</p>
-        <img src="imgs/example2.png" alt="example" height="154" width="494" />
-      </div>
+      <div class="bg"><img src="../image/section2.jpg" alt=""></div>
     </div>
     <div class="section" id="section2">
-      <div class="intro">
-        <h1>Easy to use plugin</h1>
-        <p>HTML markup example to define 4 sections.</p>
-        <img src="imgs/example2.png" alt="example" height="154" width="494" />
-      </div>
+      <div class="bg"><img src="../image/section3.jpg" alt=""></div>
     </div>
     <div class="section" id="section3">
-      <div class="intro">
-        <h1>Working On Tablets</h1>
-        <p>
-          Designed to fit to different screen sizes as well as tablet and mobile devices.
-          <br /><br /><br /><br /><br /><br />
-        </p>
+      <div class="bg"><img src="../image/section4.jpg" alt=""></div>
+    </div>
+  </div>
+  <div class="main">
+    <h2>资讯内容</h2>
+    <div class="main-con cc">
+      <div class="about">
+        <h3>关于我们</h3>
+        <p>关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们</p>
       </div>
-      <img src="imgs/tablets.png" alt="tablets" height="372" width="843" />
+      <div class="photo">
+        <h3>活动图片</h3>
+        <ul>
+          <li><a href="#"><img src="../image/section3.jpg" alt=""></a></li>
+          <li><a href="#"><img src="../image/section3.jpg" alt=""></a></li>
+          <li><a href="#"><img src="../image/section3.jpg" alt=""></a></li>
+          <li><a href="#"><img src="../image/section3.jpg" alt=""></a></li>
+        </ul>
+      </div>
     </div>
   </div>
 </body>

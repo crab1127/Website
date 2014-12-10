@@ -1,14 +1,60 @@
 *{margin:0;padding:0;}
 body {font:14px/1.8 'Microsoft Yahei', verdana;}
 ul,li{list-style: none;}
-
-.header{display: none;position: fixed;top:0;}
+a,a:hover{
+    text-decoration: none
+}
+.cc{
+    zoom: 1;
+}
+.cc:after{
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+.header{
+    position: fixed;top:0;z-index:99;
+    width:100%;
+    background: rgba(255,255,255,.7);
+    border-bottom: 1px solid #d8d8d8;
+    box-shadow: 0 -1px 2px rgba(9,9,9,.4);
+}
+.logo{
+    float:left;
+    height: 30px;width:100px;
+    margin:8px 15px;
+    background: #ccc;
+}
+.nav{
+    float:right;    
+}
+.nav li{
+    float:left;
+}
+.nav li a{
+    display: block;
+    float:left;
+    padding:0 20px;
+    height: 46px;
+    color:#333;
+    font:16px/46px "Microsoft Yahei", verdana;
+}
+.nav li a:hover{
+    background:  rgba(200,200,200,.7);;
+    -webkit-transition:background 1s;
+    -o-transition:background 1s;
+    -moz-transition:background 1s;
+    -ms-transition:background 1s;
+    transition:background 1s;
+}
 /* 右侧导航 */
 .fullPage-menu {
     position: fixed; top:50%;right:15px;z-index:100;
     opacity:1;-ms-filter:none;filter:none;
     _display: none; font-size: 12px;
-
+    margin-top: -50px;
     transition: right 0.7S cubic-bezier(0.825, 0, 0.5, 1);
     -webkit-transition: right 0.7S cubic-bezier(0.825, 0, 0.5, 1);
     -moz-transition: right 0.7S cubic-bezier(0.825, 0, 0.5, 1);
@@ -51,10 +97,51 @@ ul,li{list-style: none;}
 .section .bg { position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
 .section .bg img { display: block; width: 100%; height: 100%;}
 
-/**
- * fullPage 1.4.5
- * https://github.com/alvarotrigo/fullPage.js * MIT licensed
- *
- * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
- */
-
+.main{
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    width: 100%;
+    background: #c00;
+    color: #fff;
+}
+.main h2{
+    position: absolute;
+    top:-40px;
+    left:50%;
+    width: 100px;
+    height:40px;
+    margin-left: -50px;
+    background: #c00;
+    color: #fff;
+    text-align: center;
+    font:16px/40px 'Microsoft Yahei' verdana;
+    cursor: pointer;
+}
+.main-con{
+    display: none;
+    width: 1000px;
+    margin: 0 auto;
+    padding:20px 0;
+}
+.main h3{
+    padding-bottom: 10px;
+    color: #fff;
+    font:16px/40px 'Microsoft Yahei' verdana;
+}
+.about{
+    float:left;
+    width:300px;
+}
+.photo{
+    float:right;
+    width:650px;
+}
+.photo li{
+    float:left;
+    width:140px;
+    margin:10px 15px 0 0;
+}
+.photo li img{
+    width:100%;
+}
