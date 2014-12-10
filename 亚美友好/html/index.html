@@ -7,15 +7,12 @@
   <script src="../js/jquery.js"></script>
   <script src="../js/jquery.fullPage.min.js"></script>
   <script>
-    $(function(){
-      if($.browser.msie && $.browser.version < 10){
-        $('body').addClass('ltie10');
-      }
-      $.fn.fullpage({
-        verticalCentered: false,
-        anchors: ['page1', 'page2', 'page3', 'page4'],
-        navigation: true,
-        navigationTooltips: ['首页', '视觉', '交互', '皮肤']
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+        menu: '#menu',
+        css3: true
       });
     });
   </script>
@@ -30,40 +27,73 @@
       <li><a href="">联系方式</a></li>
     </ul>
   </div>
-  <div class="section section1">
-    <div class="bg"><img src="../image/section1.jpg" alt=""></div>
-    <div class="bg11"></div>
-    <div class="bg12"></div>
-    <div class="bg13"></div>
-    <div class="mail">
-      <a class="mail-163" href="#">163邮箱</a>
-      <a class="mail-126" href="#">126邮箱</a>
-      <a class="mail-yeah" href="#">yeah邮箱</a>
-    </div>
-    <div class="hgroup">
-      <h1><a href="#">网易邮箱6.0</a></h1>
-      <h2>改变，不止所见。</h2>
-    </div>
-    <p class="p11">网易邮箱6.0版&mdash;&mdash;2014年最具创意气质的重量级新邮箱，重生光华，为之瞩目。唯美<br>的视觉设计和视觉化交互，无可替代的独创动态情景皮肤，多项国内创意产品专利技术，<br>成就无与伦比的出众品味，无可比拟的美妙体验。</p>
-  </div>
-  <div class="section section2">
-    <div class="bg"><img src="../image/section2.jpg" alt=""></div>
-    <div class="bg21"></div>
-    <div class="bg22"></div>
-    <div class="bg23"></div>
-    <strong>[ 视觉·简 ]</strong>
-    <h3>华丽蜕变，尽享愉悦之美</h3>
-    <p class="p1">秉承网易邮箱经典的清新简洁的设计风格，邮箱 6.0 版带来全新一代的设计理念，更追求极致唯美的视觉设计、传承更多人文和艺术底蕴，华丽蜕变，带来更舒服更爽心悦目的视觉享受。</p>
-  </div>
-  <div class="section section3">
-    <div class="bg"><img src="../image/section3.jpg" alt=""></div>
-    <div class="bg31"></div>
-    <div class="bg32"></div>
-    <div class="bg33"></div>
-    <strong>[ 视觉化交互设计 ]</strong>
-    <h3>心随眼动，感官直接体验</h3>
-    <p class="p3">邮箱 6.0 版采用了全新的视觉化交互设计，通过对界面的整体风格设计、重要信息的视觉化处理以及元素本身的视觉传达优化，来实现产品流程设计和交互行为塑造。从视觉的角度出发，让用户无需多想，直接通过感官与产品进行交互。</p>
-  </div>
+  <ul id="menu" class="fullPage-menu">
+    <li data-menuanchor="firstPage" class="active"><a href="#firstPage"><span></span></a></li>
+    <li data-menuanchor="secondPage" class=""><a href="#secondPage"><span></span></a></li>
+    <li data-menuanchor="3rdPage" class=""><a href="#3rdPage"><span></span></a></li>
+    <li data-menuanchor="4thpage" class=""><a href="#4thpage"><span></span></a></li>
+  </ul>
+  <div id="fullpage">
+    <div class="section active" id="section0">
+      <h1>fullPage.js</h1>
+      <h2>Create Beautiful Fullscreen Scrolling Websites</h2>
+      <div id="download"><a href="https://github.com/alvarotrigo/fullpage.js/archive/master.zip">Download</a></div><br />
+      <img src="imgs/fullPage.png" alt="fullPage" height="243" width="282" />
+      <p id="donations">
+          <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=BEK5JQCQMED4J&lc=GB&item_name=fullPage%2ejs&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted">Donations will be appreciated!</a>
+      </p>
 
+      <img src="imgs/used-by-fullpage.png" alt="Used By" id="usedBy" height="73" width="402" />
+
+    </div>
+    <div class="section" id="section1">
+      <div class="slide active">
+        <div class="intro">
+          <h1>Create Sliders</h1>
+          <p>Not only vertical scrolling but also horizontal scrolling. With fullPage.js you will be able to add horizontal sliders in the most simple way ever.</p>
+          <img src="imgs/slider.png" alt="slider" height="132" width="662" />
+        </div>
+
+      </div>
+      <div class="slide">
+        <div class="intro">
+          <img src="imgs/1.png" alt="simple" height="176" width="176" />
+          <h1>Simple</h1>
+          <p>Easy to use. Configurable and customizable.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="intro">
+          <img src="imgs/2.png" alt="Cool" height="176" width="176" />
+          <h1>Cool</h1>
+          <p>It just looks cool. Impress everybody with a simple and modern web design!</p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="intro">
+          <img src="imgs/3.png" alt="Compatible" height="176" width="176" />
+          <h1>Compatible</h1>
+          <p>Working in modern and old browsers too! IE 8 users don't have the fault of using that horrible browser! Lets give them a chance to see your site in a proper way!</p>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="section2">
+      <div class="intro">
+        <h1>Easy to use plugin</h1>
+        <p>HTML markup example to define 4 sections.</p>
+        <img src="imgs/example2.png" alt="example" height="154" width="494" />
+      </div>
+    </div>
+    <div class="section" id="section3">
+      <div class="intro">
+        <h1>Working On Tablets</h1>
+        <p>
+          Designed to fit to different screen sizes as well as tablet and mobile devices.
+          <br /><br /><br /><br /><br /><br />
+        </p>
+      </div>
+      <img src="imgs/tablets.png" alt="tablets" height="372" width="843" />
+    </div>
+  </div>
 </body>
 </html>
