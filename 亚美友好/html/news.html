@@ -5,85 +5,87 @@
   <title>美亚友好网站</title>
   <link rel="stylesheet" href="../css/index.css">
   <script src="../js/jquery.js"></script>
-  <script src="../js/jquery.fullPage.min.js"></script>
+  <script src="../js/common.js"></script>
   <script>
-    $(document).ready(function() {
-      $('#fullpage').fullpage({
-        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke'],
-        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage'],
-        menu: '#menu',
-        css3: true,
-        afterLoad: function (anchorLink, index) {
-          console.log(anchorLink)
-          if ('4thpage' === anchorLink) {
-
-            $('.main-con').slideDown();
-          }
-          if ('3rdPage' === anchorLink) {
-            $('.main-con').slideUp();
-          }
-        }
-      });
-      $('.main h2').click(function(){
-        if($('.main-con').is(':hidden')){
-          $('.main-con').slideDown();
-        } else {
-          $('.main-con').slideUp();
-        }
-      })
-    });
+    
   </script>
+  <style>
+    body{background: #f4f4f4}
+  </style>
 </head>
 <body>
   <div class="header">
-    <div class="logo">美亚友好协会</div>
+    <div class="logo"><img src="../image/logo.png" height="30" alt=""></div>
     <ul class="nav">
       <li><a href="index.html">首頁</a></li>
-      <li><a href="">公司簡介</a></li>
-      <li><a href="">新聞動態</a></li>
-      <li><a href="">活動照片</a></li>
-      <li><a href="">發展項目</a></li>
-      <li><a href="">招賢納士</a></li>
-      <li><a href="">聯繫我們</a></li>
+      <li><a href="about.html">公司簡介</a></li>
+      <li><a href="news.html">新聞動態</a></li>
+      <li><a href="photo.html">活動照片</a></li>
+      <li><a href="case.html">發展項目</a></li>
+      <li><a href="join.html">招賢納士</a></li>
+      <li><a href="contact.html">聯繫我們</a></li>
     </ul>
   </div>
-  <ul id="menu" class="fullPage-menu">
-    <li data-menuanchor="firstPage" class="active"><a href="#firstPage"><span></span></a></li>
-    <li data-menuanchor="secondPage" class=""><a href="#secondPage"><span></span></a></li>
-    <li data-menuanchor="3rdPage" class=""><a href="#3rdPage"><span></span></a></li>
-    <li data-menuanchor="4thpage" class=""><a href="#4thpage"><span></span></a></li>
-  </ul>
-  <div id="fullpage">
-    <div class="section active" id="section0">
-      <div class="bg"><img src="../image/section1.jpg" alt=""></div>
-    </div>
-    <div class="section" id="section1">
-      <div class="bg"><img src="../image/section2.jpg" alt=""></div>
-    </div>
-    <div class="section" id="section2">
-      <div class="bg"><img src="../image/section3.jpg" alt=""></div>
-    </div>
-    <div class="section" id="section3">
-      <div class="bg"><img src="../image/section4.jpg" alt=""></div>
-    </div>
-  </div>
-  <div class="main">
-    <h2>资讯内容</h2>
-    <div class="main-con cc">
-      <div class="about">
-        <h3>关于我们</h3>
-        <p>关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们</p>
+  <div class="page-wrap">
+    <div class="page">
+      <div class="box-mod">
+        <h1>新聞動態</h1>
+        <div class="con-wrap">
+         <ul class="li-txt">
+           <li><span class="fr">2014-04-21</span><a href="#">美亚友好协会官网正式开通美亚友好美亚友好协会官网正式开通美亚友好</a></li>
+           <li><span class="fr">2014-04-21</span><a href="#">美亚友好协会官网正式开通美亚友好美亚友好协会官网正式开通美亚友好</a></li>
+           <li><span class="fr">2014-04-21</span><a href="#">美亚友好协会官网正式开通美亚友好美亚友好协会官网正式开通美亚友好</a></li>
+           <li><span class="fr">2014-04-21</span><a href="#">美亚友好协会官网正式开通美亚友好美亚友好协会官网正式开通美亚友好</a></li>
+           <li><span class="fr">2014-04-21</span><a href="#">美亚友好协会官网正式开通美亚友好美亚友好协会官网正式开通美亚友好</a></li>
+           <li><span class="fr">2014-04-21</span><a href="#">美亚友好协会官网正式开通美亚友好美亚友好协会官网正式开通美亚友好</a></li>
+           <li><span class="fr">2014-04-21</span><a href="#">美亚友好协会官网正式开通美亚友好美亚友好协会官网正式开通美亚友好</a></li>
+           <li><span class="fr">2014-04-21</span><a href="#">美亚友好协会官网正式开通美亚友好美亚友好协会官网正式开通美亚友好</a></li>
+           <li><span class="fr">2014-04-21</span><a href="#">美亚友好协会官网正式开通美亚友好美亚友好协会官网正式开通美亚友好</a></li>
+           <li><span class="fr">2014-04-21</span><a href="#">美亚友好协会官网正式开通美亚友好美亚友好协会官网正式开通美亚友好</a></li>
+           <li><span class="fr">2014-04-21</span><a href="#">美亚友好协会官网正式开通美亚友好美亚友好协会官网正式开通美亚友好</a></li>
+           <li><span class="fr">2014-04-21</span><a href="#">美亚友好协会官网正式开通美亚友好美亚友好协会官网正式开通美亚友好</a></li>
+           <li><span class="fr">2014-04-21</span><a href="#">美亚友好协会官网正式开通美亚友好美亚友好协会官网正式开通美亚友好</a></li>
+           <li><span class="fr">2014-04-21</span><a href="#">美亚友好协会官网正式开通美亚友好美亚友好协会官网正式开通美亚友好</a></li>
+           <li><span class="fr">2014-04-21</span><a href="#">美亚友好协会官网正式开通美亚友好美亚友好协会官网正式开通美亚友好</a></li>
+           <li><span class="fr">2014-04-21</span><a href="#">美亚友好协会官网正式开通美亚友好美亚友好协会官网正式开通美亚友好</a></li>
+           <li><span class="fr">2014-04-21</span><a href="#">美亚友好协会官网正式开通美亚友好美亚友好协会官网正式开通美亚友好</a></li>
+           <li><span class="fr">2014-04-21</span><a href="#">美亚友好协会官网正式开通美亚友好美亚友好协会官网正式开通美亚友好</a></li>
+           <li><span class="fr">2014-04-21</span><a href="#">美亚友好协会官网正式开通美亚友好美亚友好协会官网正式开通美亚友好</a></li>
+         </ul>
+        </div>
       </div>
-      <div class="photo">
-        <h3>活动图片</h3>
-        <ul>
-          <li><a href="#"><img src="../image/section3.jpg" alt=""></a></li>
-          <li><a href="#"><img src="../image/section3.jpg" alt=""></a></li>
-          <li><a href="#"><img src="../image/section3.jpg" alt=""></a></li>
-          <li><a href="#"><img src="../image/section3.jpg" alt=""></a></li>
+    </div>
+    <div class="side">
+      <div class="box-mod">
+        <h3>推荐新闻</h3>
+        <ul class="li-txt">
+          <li><a href="#">美亚友好协会官网正式开通美亚友好</a></li>
+          <li><a href="#">美亚友好协会官网正式开通美友好</a></li>
+          <li><a href="#">美亚友好协会官网正式开通美友好</a></li>
+          <li><a href="#">美亚友好协会官网正通美亚友好</a></li>
+          <li><a href="#">美亚友好协会官网正式开通亚友好</a></li>
         </ul>
       </div>
+      <div class="box-mod">
+        <h3>联系方式</h3>
+        <div class="sid-cantact">
+          <p>
+            <span>联系人：</span>赵先生；
+          </p>
+          <p>
+            <span>联系电话：</span>18234322888；
+          </p>
+          <p>
+            <span>地址：</span>美亚友好协会的地址，街道，门牌号；
+          </p>
+        </div>
+      </div>
     </div>
+
   </div>
+  <div class="wrap-bg" id='wrap-bg'></div>
+  <script>
+  background('wrap-bg', '../image/page_bg_scope.jpg')
+  </script>
 </body>
 </html>

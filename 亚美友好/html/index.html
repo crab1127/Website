@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="../css/index.css">
   <script src="../js/jquery.js"></script>
   <script src="../js/jquery.fullPage.min.js"></script>
+  <script src="../js/common.js"></script>
   <script>
     $(document).ready(function() {
       $('#fullpage').fullpage({
@@ -31,20 +32,21 @@
           $('.main-con').slideUp();
         }
       })
+      new Roll('active');
     });
   </script>
 </head>
 <body>
   <div class="header">
-    <div class="logo">美亚友好协会</div>
+    <div class="logo"><img src="../image/logo.png" height="30" alt=""></div>
     <ul class="nav">
       <li><a href="index.html">首頁</a></li>
-      <li><a href="">公司簡介</a></li>
-      <li><a href="">新聞動態</a></li>
-      <li><a href="">活動照片</a></li>
-      <li><a href="">發展項目</a></li>
-      <li><a href="">招賢納士</a></li>
-      <li><a href="">聯繫我們</a></li>
+      <li><a href="about.html">公司簡介</a></li>
+      <li><a href="news.html">新聞動態</a></li>
+      <li><a href="photo.html">活動照片</a></li>
+      <li><a href="case.html">發展項目</a></li>
+      <li><a href="join.html">招賢納士</a></li>
+      <li><a href="contact.html">聯繫我們</a></li>
     </ul>
   </div>
   <ul id="menu" class="fullPage-menu">
@@ -58,13 +60,13 @@
       <div class="bg"><img src="../image/section1.jpg" alt=""></div>
     </div>
     <div class="section" id="section1">
-      <div class="bg"><img src="../image/section2.jpg" alt=""></div>
+      <div class="bg"><img src="../image/page_bg_partners.jpg" alt=""></div>
     </div>
     <div class="section" id="section2">
-      <div class="bg"><img src="../image/section3.jpg" alt=""></div>
+      <div class="bg"><img src="../image/page_bg_content.jpg" alt=""></div>
     </div>
     <div class="section" id="section3">
-      <div class="bg"><img src="../image/section4.jpg" alt=""></div>
+      <div class="bg"><img src="../image/page_bg_casus.jpg" alt=""></div>
     </div>
   </div>
   <div class="main">
@@ -72,16 +74,35 @@
     <div class="main-con cc">
       <div class="about">
         <h3>关于我们</h3>
-        <p>关于我们关于我们关于我们关于我们关于我们关于我们关于我们关于我们</p>
+        <p>美亚友好协公司簡介公司美亚友好协簡介公司美亚友好协簡介公司簡介公司簡美亚友好协介公司簡介公司簡介公司簡介公司簡介公司簡介公司簡介公司簡介公司簡介公介美亚友好协美亚友好协美亚友好协美亚友好协美亚友好协美亚友好协</p>
       </div>
       <div class="photo">
         <h3>活动图片</h3>
-        <ul>
-          <li><a href="#"><img src="../image/section3.jpg" alt=""></a></li>
-          <li><a href="#"><img src="../image/section3.jpg" alt=""></a></li>
-          <li><a href="#"><img src="../image/section3.jpg" alt=""></a></li>
-          <li><a href="#"><img src="../image/section3.jpg" alt=""></a></li>
-        </ul>
+        <div id='active'>
+          <span class="case-left">左</span>
+          <div class="case-c">
+            <ul class="case-list cc">                             
+              <li><a href="#"><img src="../image/img.png" alt=""></a></li>
+              <li><a href="#"><img src="../image/img.png" alt=""></a></li>
+              <li><a href="#"><img src="../image/img.png" alt=""></a></li>
+              <li><a href="#"><img src="../image/img.png" alt=""></a></li>  
+              <li><a href="#"><img src="../image/img.png" alt=""></a></li>  
+              <li><a href="#"><img src="../image/img.png" alt=""></a></li>  
+              <li><a href="#"><img src="../image/img.png" alt=""></a></li>  
+              <li><a href="#"><img src="../image/img.png" alt=""></a></li>  
+            </ul>
+          </div>
+          <span class="case-right">右</span>
+        </div>
+      </div>
+      <div class="link">
+        <strong>友情链接：</strong><a href="#">美亚友好协</a><a href="#">美亚友好协</a><a href="#">美亚友好协</a>
+      </div>
+      <div class="index-foot">
+        <div class="fl">©2014 美亚友好协</div>
+        <div class="fr">
+          地址：世界的某地；电话：18688888888；联系人：赵先生
+        </div>
       </div>
     </div>
   </div>

@@ -17,18 +17,18 @@ a,a:hover{
 .header{
     position: fixed;top:0;z-index:99;
     width:100%;
-    background: rgba(255,255,255,.7);
-    border-bottom: 1px solid #d8d8d8;
+    background: rgba(255,255,255,.9);
+    /*border-bottom: 1px solid #d8d8d8;*/
     box-shadow: 0 -1px 2px rgba(9,9,9,.4);
 }
 .logo{
     float:left;
-    height: 30px;width:100px;
+    height: 30px;
     margin:8px 15px;
-    background: #ccc;
 }
 .nav{
-    float:right;    
+    float:right; 
+    padding-right: 10px; 
 }
 .nav li{
     float:left;
@@ -42,12 +42,13 @@ a,a:hover{
     font:16px/46px "Microsoft Yahei", verdana;
 }
 .nav li a:hover{
-    background:  rgba(200,200,200,.7);;
-    -webkit-transition:background 1s;
+    color:#fff;
+    background:  rgba(200,0,0,.7);;
+    /*-webkit-transition:background,color 1s;
     -o-transition:background 1s;
     -moz-transition:background 1s;
     -ms-transition:background 1s;
-    transition:background 1s;
+    transition:background 1s;*/
 }
 /* 右侧导航 */
 .fullPage-menu {
@@ -122,26 +123,138 @@ a,a:hover{
     display: none;
     width: 1000px;
     margin: 0 auto;
-    padding:20px 0;
+    padding:0px 0 20px;
 }
 .main h3{
-    padding-bottom: 10px;
     color: #fff;
     font:16px/40px 'Microsoft Yahei' verdana;
 }
 .about{
     float:left;
-    width:300px;
+    width:250px;
+}
+.about p{
+    line-height: 1.4;font-size: 13px;color: #eee
 }
 .photo{
     float:right;
-    width:650px;
+    width:700px;
 }
-.photo li{
+#active{position: relative;}
+.case-c{position: relative;height:140px;width:700px;overflow: hidden;margin:0px auto 0;}
+.case-left,.case-right{position: absolute;top:50px;width:0;height:0;cursor: pointer;overflow:hidden;display: block;border:10px solid transparent;}
+.case-left{left:-30px;border-right-color:#aaa;}
+.case-left:hover{background-position: 0 -150px;border-right-color:#fff;}
+.case-right{right:-30px;border-left-color:#aaa;}
+.case-right:hover{border-left-color:#fff;}
+.case-c ul{position: absolute;width:10000px;}
+.case-c li{float:left;width:160px;padding-right:20px;text-align:center;}
+.case-c li img{width:160px;height:120px;display:block;margin-bottom:5px;border-radius: 2px;}
+.case-c li a:hover{text-decoration: none}
+
+.link{
+    border-top: 1px #EC5A5A dashed;
+    border-bottom: 1px #EC5A5A dashed;
+    clear: both;
+    padding: 15px 0;
+    line-height: 1;
+    color:#ccc;
+}
+.link strong{font-weight: 700}
+.link a{padding:0 8px;display: inline-block;border-right:1px solid #EC5A5A; color:#ccc;}
+.link a:hover{color:#fff;}
+.index-foot{
+    padding-top: 10px;
+    line-height: 1.8;
+    color:#ECA9A9;
+    font-size: 12px;
+}
+.w-980,.page-wrap{
+    width: 980px;
+    margin: 0 auto;
+}
+.page-wrap{
+    margin-top: 60px
+}
+.side{
     float:left;
-    width:140px;
-    margin:10px 15px 0 0;
+    width:250px;
+    position: fixed;
+    top:60px;
 }
-.photo li img{
-    width:100%;
+.page{
+    float:right;
+    width:715px;
+}
+.box-mod{
+    padding: 8px;
+    border-radius: 5px;
+    background: rgba(255,255, 255,.7);
+    border:1px solid #ccc;
+    margin-bottom: 15px;
+}
+.side h3{
+    font:600 16px/1 'Microsoft Yahei';
+    color:#555;
+    margin:5px 0 10px;
+}
+
+.side .con-mod{
+    margin-bottom: 15px
+}
+.sid-cantact{
+    color:#666;
+}
+.sid-cantact span{
+    color:#999;
+}
+.li-txt li{
+    line-height: 1.2;
+    font-size: 13px;
+    padding: 6px 0;
+    list-style: inside;
+    color:#aaa;
+    border-bottom:1px #aaa dotted;
+}
+.li-txt li a,.li-img li a{
+    color:#666;
+}
+.li-txt li a:hover,.li-img li a:hover{
+    color:#333;
+}
+.li-img li{
+    float:left;
+    margin:0px 10px 10px 0;
+    text-align: center;
+    _display:inline;
+}
+.li-img img{
+    display: block;
+    margin-bottom: 5px
+}
+.box-mod h1{
+    font:600 18px/1 'Microsoft Yahei';
+    color:#333;
+    margin:5px 0 10px;
+}
+.con-wrap{
+    padding: 6px
+}
+.con-wrap p{
+    text-indent: 2em;
+    margin-bottom: 10px;
+    color: #444;
+}
+.wrap-bg{
+    position: fixed;
+top: 0;
+z-index: -1;
+overflow: hidden;
+width: 100%;
+height: 100%;}
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
 }
